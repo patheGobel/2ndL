@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx} % Pour l'insertion d'images
+\usepackage{float}    % Pour contrôler précisément le placement
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+\author{Destiné aux élèves de $2^{nd}$ L\\Lycée de Dindéfelo\\Présenté par M. BA}
+\title{\textbf{Calcul dans $\mathbb{R}$}}
+\date{\today}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+% Commande pour la couleur d'accentuation
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{eso-pic}         % Pour ajouter des éléments en arrière-plan
+
+\usepackage{enumitem}
+%---------------------------------------
+% Définir un compteur pour les exemples
+\newcounter{exemple}
+
+% Définir la commande \exemple pour afficher un exemple numéroté
+\newcommand{\exemple}{%
+  \refstepcounter{exemple}% Incrémenter le compteur
+  \textbf{\textcolor{orange}{Exemple \theexemple : }} \ignorespaces
+}
+%---------------------------------------
+\newcounter{solution}
+
+% Définir la commande \solutione pour afficher un solution numéroté
+\newcommand{\solution}{%
+  \refstepcounter{solution}% Incrémenter le compteur
+  \textbf{\textcolor{orange}{Solution \thesolution : }} \ignorespaces
+}
+%---------------------------------------
+\definecolor{myorange}{rgb}{1.0, 0.8, 0.0}
+
+% Définir un compteur pour les exercices d'application
+\newcounter{exerciceapp}
+
+% Définir la commande pour afficher un exercice d'application numéroté
+\newcommand{\exerciceapp}{%
+  \refstepcounter{exerciceapp}%
+  \textbf{\textcolor{myorange}{Exercice d'application \theexerciceapp :}} \ignorespaces
+}
+%--------------------------------------
+% Définir un compteur pour les exercices d'application
+\newcounter{correction}
+
+% Définir la commande pour afficher un correction exercice d'application numéroté
+\newcommand{\correction}{%
+  \refstepcounter{correction}%
+  \textbf{\textcolor{myorange}{Correction \thecorrection :}} \ignorespaces
+}
+%--------------------------------------
+% Définir un compteur pour les remarque d'application
+\newcounter{remarque}
+
+%----------------------------------------
+\definecolor{myorange1}{rgb}{1.0, 1.5, 0}
+% Définir la commande pour afficher un remarque numéroté
+\newcommand{\remarque}{%
+  \refstepcounter{remarque}%
+  \textbf{\textcolor{myorange1}{Remarque \theremarque :}} \ignorespaces
+}
+% Commande pour ajouter du texte en arrière-plan
+\AddToShipoutPicture{
+    \AtTextCenter{%
+        \makebox[0pt]{\rotatebox{45}{\textcolor[gray]{0.9}{\fontsize{5cm}{5cm}\selectfont Pathé Gobel BA}}}
+    }
+}
+
+\begin{document}
+\maketitle
+
+\end{document}
