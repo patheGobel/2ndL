@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{lmodern} % Pour une police plus nette
+\usepackage{stmaryrd}
+\usepackage{graphicx} % Pour l'insertion d'images
+\usepackage{float}    % Pour contrôler précisément le placement
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{color, soul}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Version plus récente de pgfplots
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+\usepackage{enumitem}
+%\author{Destiné aux élèves de Terminale S\\Lycée de Dindéfelo\\Présenté par M. BA}
+%\title{\textbf{Rappels et compléments sur les fonctions numériques}}
+%\date{\today}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+% Commande pour la couleur d'accentuation
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[margin=2.5cm]{geometry} % Ajustement des marges
+\usepackage{eso-pic} % Pour ajouter des éléments en arrière-plan
+
+% Commande pour ajouter du texte en arrière-plan, centré au milieu de chaque page
+\AddToShipoutPicture{
+    \AtPageCenter{%
+        \makebox(0,0)[c]{\rotatebox{60}{\textcolor[gray]{0.9}{\fontsize{2cm}{2cm}\selectfont PGB}}}
+    }
+}
+
+\newcounter{exercice}
+
+% Définir la commande \exemple pour afficher un exemple numéroté
+\newcommand{\exercice}{%
+  \refstepcounter{exercice}% Incrémenter le compteur
+  \textbf{\textcolor{black}{Exercice \theexercice  }} \ignorespaces
+}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\raggedright
+\textbf{Ministère de l'Éducation Nationale}\\
+Inspection Académique de Kédougou\\
+Lycée Dindéfelo\\
+Cellule de Mathématiques
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\raggedleft
+\textbf{Année scolaire 2024-2025}\\
+Date : 05/11/2024\\
+Classe : 2nd L\\
+Professeur : M. BA
+\end{minipage}
+
+\vspace{0.5cm}
+
+\begin{center}
+\textbf{Calcul dans $\mathbb{R}$}
+\end{center}
+
+\textbf{\underline{\exercice}:} Ecrire les réels suivants sous formes de fractions irréductibles :
+
+\[
+\textbf{A}=\frac{\frac{3}{2}-\frac{5}{3}}{-\frac{7}{2}+\frac{1}{6}} \times \frac{1}{-3+\frac{2}{5}} \quad\quad;\quad\quad \textbf{B}=\frac{2}{3}-\frac{4}{5}+\frac{3}{7} \quad\quad;\quad\quad \textbf{C}=\left(3+\frac{4}{5} \right) \left(\frac{1}{5}-4 \right) 
+\]
+
+\[
+\textbf{D}=\left(\frac{2}{3}-1 \right)\times \frac{2+\frac{1}{3}}{\frac{3}{5}+\frac{1}{5}} \quad\quad;\quad\quad \textbf{E}=\frac{3+\frac{1}{3}}{\frac{2}{3}-2} \times \frac{2}{\frac{1}{3}+3} \quad\quad;\quad\quad \textbf{F}=\frac{\frac{1}{4}+3}{\frac{3}{5}} \times \frac{7}{3}
+\]
+\end{document}
