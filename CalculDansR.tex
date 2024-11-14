@@ -282,11 +282,10 @@ Simplifie et développe les expressions suivantes en utilisant les identités re
 \section*{\underline{\textbf{\textcolor{red}{II. PUISSANCE D'UN RÉEL :}}}}
 \subsection*{\underline{\textbf{\textcolor{red}{1. Définition :}}}}
 
-Quel que soit le réel non nul $a$ ($a \neq 0$) et quel que soit l'entier relatif $m$ ($m \in \mathbb{Z}$).
+Pour tout réel non nul $a$ ($a \neq 0$) et tout entier relatif $m$ ($m \in \mathbb{Z}$), on note $a^m$ et on lit « $a$ puissance $m$ » ou « $a$ exposant $m$ ».
 
-On note $a^m$ et on lit « $a$ puissance $m$ ou $a$ exposant $m$ ».
+Si $m \geq 2$, alors $a^m = a \times a \times a \times \dots \times a$, avec $m$ facteurs de $a$.
 
-Si $m \geq 2$, alors $a^m = a \times a \times a \times \dots \times a$ : on a $m$ facteurs de $a$.
 
 \textbf{\exemple}
 
@@ -327,19 +326,19 @@ Quelques soient les réels non nuls $a$ et $b$ ($a \neq 0 ; b \neq 0$) et quelqu
 
 \section*{\underline{\textbf{\textcolor{red}{III) CALCULS SUR LES RADICAUX:}}}}
 \subsection*{\underline{\textbf{\textcolor{red}{1. Définition :}}}}
-Soit \( a \) un réel positif ou nul (\( a \leq 0 \)).On appelle racine carrée de \( a \), notée \( \sqrt{a} \) ; le réel positif ou nul dont le carré est égale à \( a \) : \( \sqrt{a}^{2}=a \).
+Soit \( a \) un réel positif ou nul (\( a \geq 0 \)).On appelle racine carrée de \( a \), notée \( \sqrt{a} \) ; le réel positif ou nul dont le carré est égale à \( a \) : \( \left( \sqrt{a}\right) ^{2}=a \).
 
 \textbf{\exemple}
 
 \( \sqrt{5}^{2}=5 \) ; \( \sqrt{19}^{2}=19 \)
 
-Attention !! On n’écrit pas la racine carrée d’un nombre négatif : Par exemples
+Attention !! On n’écrit pas la racine carrée d’un nombre négatif : 
 
-\( \sqrt{-2}=5 \) ; \( \sqrt{-7} \)
+Par exemples \( \sqrt{-2} \) ; \( \sqrt{-7} \)
 
 \subsection*{\underline{\textbf{\textcolor{red}{2) Propriétés :}}}}
 
-Soient \( a \) et \( a \) deux réels strictement positifs ( \( a > 0 ; b > 0 \) ) et soit \( n \) un entier naturel, on a :
+Soient \( a \) , \( b \) et \( d \) deux réels strictement positifs ( \( a \geq 0 ; b > 0 ; d > 0\) ) et soit \( n \) un entier naturel, on a :
 \begin{itemize}
 \item[$\ast$] \( \sqrt{a \times b} = \sqrt{a} \times \sqrt{b} \)
 \item[$\ast$] \( (\sqrt{a})^{2} = a \) 
@@ -347,8 +346,53 @@ Soient \( a \) et \( a \) deux réels strictement positifs ( \( a > 0 ; b > 0 \)
 \item[$\ast$]	\( (\sqrt{a})^{n} = ... \) 
 \item[$\ast$] \( \frac{1}{\sqrt{a}}=\frac{\sqrt{a}}{a} \)
 \item[$\ast$] \( \sqrt{\frac{a}{b}}=\frac{\sqrt{a}}{\sqrt{b}} \)
+\item[$\ast$] \( d\sqrt{a}+c\sqrt{a} = (d+c)\sqrt{a} \)
+\item[$\ast$] \( (d\sqrt{a})^{2} = (d)^{2}(\sqrt{a})^{2} \)
+\item[$\ast$] \(\text{l’expression conjuguée de } \sqrt{a}+\sqrt{b} \text{ est } \sqrt{a}-\sqrt{b} \)
+\item[$\ast$] \(\text{l’expression conjuguée de } \sqrt{a}-\sqrt{b} \text{ est } \sqrt{a}+\sqrt{b} \)
 \end{itemize}
-%\textbf{\solution}
-%\subsection*{\underline{\textbf{\textcolor{red}{2) Propriétés :}}}}
-%\textbf{\remarque}
+\section*{\underline{\textbf{\textcolor{red}{IV) INTERVALLES DANS $\mathbb{R}$:}}}}
+\subsection*{\underline{\textbf{\textcolor{red}{1) Définition :}}}}
+L’ensemble des abscisses des points d’une droite graduée est appelé ensemble des
+nombres réels, que l’on note
+\subsection*{\underline{\textbf{\textcolor{red}{2)Présentation des différents types d’intervalles :}}}}
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Type d'intervalle} & \textbf{Exemples} \\
+\hline
+Intervalles bornés & $\left[a, b\right]$, $\left]a, b\right[$, $\left[a, b\right[$, $\left]a, b\right]$ \\
+\hline
+Intervalles non bornés & $\left]-\infty, a\right]$, $\left]a, +\infty\right[$ \\
+\hline
+\end{tabular}
+\end{center}
+\textbf{\remarque}
+
+Soit $a$ un réel.
+
+\begin{itemize}
+\item[$\star$] $\left[a, a\right]={a}$ on lit "singleton $a$" est un intervalle. Exemples: $\left[4, 4\right]={4}$ et $\left[-2, -2\right]={-2}$
+
+\item[$\star$] $\left]a, a\right[=\emptyset$ Exemples: $\left]4, 4\right[=\emptyset$ et $\left]-2, -2\right[=\emptyset$
+\end{itemize}
+
+\subsection*{\underline{\textbf{\textcolor{red}{3)Intersection et réunion de deux intervalles :}}}}
+\subsection*{\underline{\textbf{\textcolor{red}{a) Intersection de deux intervalles :}}}}
+L’intersection de deux intervalles $I$ et $J$, est l’ensemble des réels appartenant à $I$ et à $J$.
+
+On la note $I \cap J$ et on lit « $I$ inter $J$ ».
+
+\subsection*{\underline{\textbf{\textcolor{red}{b) Réunion de deux intervalles :}}}}
+La réunion de deux intervalles $I$ et $J$, est l’ensemble des réels appartenant à $I$ ou bien à $J$.
+On la note $I \cup J$ et on lit « $I$ union $J$ ».
+\section*{\underline{\textbf{\textcolor{red}{V) VALEUR ABSOLUE:}}}}
+\subsection*{\underline{\textbf{\textcolor{red}{1) Définition :}}}}
+On appelle valeur absolue du réel a, le réel positif noté |a|, définie ainsi :
+\begin{itemize}
+\item[$\star$] Si a est strictement positif (a > 0) alors |a| = a ;
+\item[$\star$] Si a est strictement négatif (a < 0) alors |a| = -(a) ;
+\item[$\star$] Si a est égale à zéro (a = 0) alors |a| = |0| = 0.
+\end{itemize}
 \end{document}
