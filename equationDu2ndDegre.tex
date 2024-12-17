@@ -1,0 +1,302 @@
+\documentclass[12pt]{article}
+\usepackage{stmaryrd}
+\usepackage{graphicx} % Pour l'insertion d'images
+\usepackage{float}    % Pour contrôler précisément le placement
+\usepackage[utf8]{inputenc}
+
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+
+\usepackage{color, soul}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+\author{Destiné aux élèves de $2^{nd}$ L\\Lycée de Dindéfelo\\Présenté par M. BA}
+\title{\textbf{EQUATIONS ET INEQUATIONS DU SECOND DEGRE}}
+\date{\today}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+
+% Commande pour la couleur d'accentuation
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage{eso-pic}         % Pour ajouter des éléments en arrière-plan
+
+\usepackage{enumitem}
+%---------------------------------------
+% Définir un compteur pour les exemples
+\newcounter{exemple}
+
+% Définir la commande \exemple pour afficher un exemple numéroté
+\newcommand{\exemple}{%
+  \refstepcounter{exemple}% Incrémenter le compteur
+  \textbf{\textcolor{orange}{Exemple \theexemple : }} \ignorespaces
+}
+%---------------------------------------
+\newcounter{solution}
+
+% Définir la commande \solutione pour afficher un solution numéroté
+\newcommand{\solution}{%
+  \refstepcounter{solution}% Incrémenter le compteur
+  \textbf{\textcolor{orange}{Solution \thesolution : }} \ignorespaces
+}
+%---------------------------------------
+\definecolor{myorange}{rgb}{1.0, 0.8, 0.0}
+
+% Définir un compteur pour les exercices d'application
+\newcounter{exerciceapp}
+
+% Définir la commande pour afficher un exercice d'application numéroté
+\newcommand{\exerciceapp}{%
+  \refstepcounter{exerciceapp}%
+  \textbf{\textcolor{myorange}{Exercice d'application \theexerciceapp :}} \ignorespaces
+}
+%--------------------------------------
+% Définir un compteur pour les exercices d'application
+\newcounter{correction}
+
+% Définir la commande pour afficher un correction exercice d'application numéroté
+\newcommand{\correction}{%
+  \refstepcounter{correction}%
+  \textbf{\textcolor{myorange}{Correction \thecorrection :}} \ignorespaces
+}
+%--------------------------------------
+% Définir un compteur pour les remarque d'application
+\newcounter{remarque}
+
+%----------------------------------------
+\definecolor{myorange1}{rgb}{1.0, 1.5, 0}
+% Définir la commande pour afficher un remarque numéroté
+\newcommand{\remarque}{%
+  \refstepcounter{remarque}%
+  \textbf{\textcolor{myorange1}{Remarque \theremarque :}} \ignorespaces
+}
+% Commande pour ajouter du texte en arrière-plan
+\AddToShipoutPicture{
+    \AtTextCenter{%
+        \makebox[0pt]{\rotatebox{45}{\textcolor[gray]{0.9}{\fontsize{5cm}{5cm}\selectfont Pathé Gobel BA}}}
+    }
+}
+
+\begin{document}
+\maketitle
+
+\section*{\underline{\textbf{\textcolor{red}{I. EQUATIONS DU SECOND DEGRE :}}}}
+
+\subsection*{\underline{\textbf{\textcolor{red}{1) Définition :}}}}
+Une équation du second degré est une équation de la forme :
+\[
+ax^2 + bx + c = 0 \quad \text{où} \quad a, b, c \in \mathbb{R} \quad \text{et} \quad a \neq 0.
+\]
+L'expression \( ax^2 + bx + c \) est appelée un \textbf{trinôme du second degré} en \( x \).
+
+
+\textbf{\underline{Exemples et Contres exemples :}}
+\begin{itemize}
+    \item \textbf{Exemple :} \( 2x^2 + 3x - 5 = 0 \) est une équation du second degré, car \( a = 2 \neq 0 \).
+    \item \textbf{Exemple :} \( x^2 - 4 = 0 \) est également une équation du second degré, avec \( a = 1, b = 0, c = -4 \).
+    \item \textbf{Contre-exemple :} \( 3x + 5 = 0 \) n'est pas une équation du second degré, car il n'y a pas de terme en \( x^2 \) (ici \( a = 0 \)).
+\end{itemize}
+
+\textbf{\underline{Remarque :}}
+
+Si \( a = 0 \), l'équation \( ax^2 + bx + c = 0 \) devient une équation de degré 1 (\( bx + c = 0 \))
+
+\subsection*{\underline{\textbf{\textcolor{red}{2) Méthodes de résolutions :}}}}
+
+\subsection*{\underline{\textbf{\textcolor{red}{a) Équation du type \( ax^2 + bx = 0 \) où \( a \neq 0 \) et \( b \neq 0 \):}}}}
+
+Pour résoudre une équation du type \( ax^2 + bx = 0 \), on suit les étapes suivantes :
+
+\begin{enumerate}
+    \item On factorise par \( x \), car \( x \) est un facteur commun :
+    \[
+    ax^2 + bx = 0 \implies x (ax + b) = 0.
+    \]
+    \item Un produit est nul si et seulement si un des facteurs est nul. On a donc :
+    \[
+    x = 0 \quad \text{ou} \quad ax + b = 0.
+    \]
+    \item On résout \( ax + b = 0 \) :
+    \[
+    ax + b = 0 \implies x = -\frac{b}{a}.
+    \]
+
+		\[
+    S=\left\lbrace 0;-\frac{b}{a}\right\rbrace 
+    \]    
+    
+\end{enumerate}
+
+\textbf{\underline{Exemple :}}  
+Résolvons l'équation \( 2x^2 + 4x = 0 \) :
+
+\begin{itemize}
+    \item On factorise :
+    \[
+    2x^2 + 4x = 0 \implies x (2x + 4) = 0.
+    \]
+    \item On applique la règle du produit nul :
+    \[
+    x = 0 \quad \text{ou} \quad 2x + 4 = 0.
+    \]
+    \item On résout \( 2x + 4 = 0 \) :
+    \[
+    2x + 4 = 0 \implies x = -\frac{4}{2} = -2.
+    \]
+\end{itemize}
+
+\textbf{\underline{Solutions :}}  
+Les solutions de l'équation sont :
+\[
+x = 0 \quad \text{et} \quad x = -2.
+\]
+		\[
+    S=\left\lbrace 0;-2\right\rbrace 
+    \] 
+
+\subsection*{\underline{\textbf{\textcolor{red}{b) Équation du type \( ax^2 + c = 0 \) où \( a \neq 0 \) et \( c \neq 0 \):}}}}
+
+Pour résoudre une équation du type \( ax^2 + c = 0 \), on suit les étapes suivantes :
+
+\[
+ax^2 + c = 0 \implies ax^2 = -c \implies x^2 = -\frac{c}{a}.
+\]
+
+On distingue deux cas selon le signe du quotient \( -\frac{c}{a} \) :
+
+\begin{enumerate}
+    \item \textbf{1\up{er} cas :} Si \( -\frac{c}{a} > 0 \)  
+    Dans ce cas, l'équation admet deux solutions réelles opposées, car la racine carrée est définie.  
+    On a alors :
+    \[
+    x = - \sqrt{-\frac{c}{a}} \textbf{ ou } x =  \sqrt{\frac{c}{a}}.
+    \]
+		\[
+    S=\left\lbrace - \sqrt{-\frac{c}{a}}; \sqrt{-\frac{c}{a}}\right\rbrace 
+    \]
+    \item \textbf{2\up{ème} cas :} Si \( -\frac{c}{a} < 0 \)  
+    Dans ce cas, l'équation n'a pas de solution réelle, car la racine carrée d'un nombre négatif n'est pas définie dans l'ensemble des réels.
+    \[
+    S=\emptyset
+    \]
+\end{enumerate}
+
+\textbf{\underline{Exemples :}}
+
+\begin{itemize}
+    \item \textbf{Exemple 1 :} Résolvons \( 2x^2 - 8 = 0 \) :  
+    \[
+    2x^2 - 8 = 0 \implies 2x^2 = 8 \implies x^2 = \frac{8}{2} = 4.
+    \]
+    On a :
+    \[
+    x = \pm \sqrt{4} \implies x = \pm 2.
+    \]
+    
+    \[
+    S=\left\lbrace - 2 ; 2 \right\rbrace 
+    \]
+
+    \item \textbf{Exemple 2 :} Résolvons \( -3x^2 + 12 = 0 \) :  
+    \[
+    -3x^2 + 12 = 0 \implies -3x^2 = -12 \implies x^2 = \frac{-12}{-3} = 4.
+    \]
+    On a :
+    \[
+    x = \pm \sqrt{4} \implies x = \pm 2.
+    \]
+    \textbf{Solutions :} \( x = 2 \) et \( x = -2 \).
+
+    \item \textbf{Exemple 3 :} Résolvons \( 4x^2 + 9 = 0 \) :  
+    \[
+    4x^2 + 9 = 0 \implies 4x^2 = -9 \implies x^2 = -\frac{9}{4}.
+    \]
+    Ici, \( -\frac{9}{4} < 0 \), donc l'équation n'a pas de solution réelle.
+\end{itemize}
+
+\subsection*{\underline{\textbf{\textcolor{red}{c) Cas général : équation du type \( ax^2 + bx + c = 0 \) où \( a \neq 0 \):}}}}
+
+\textbf{\underline{Forme canonique du trinôme du second degré :}}  
+
+Un trinôme du second degré \( ax^2 + bx + c \) où \( a \neq 0 \) peut être réécrit sous la forme canonique suivante :  
+\[
+ax^2 + bx + c = a\left[ \left( x - \frac{b}{2a} \right)^2 + \frac{b^2-4ac}{4a^{2}} \right] 
+\]
+\[ \textbf{En posant } \Delta = b^2-4ac \textbf{ on a } 
+ax^2 + bx + c = a\left[ \left( x - \frac{b}{2a} \right)^2 + \frac{\Delta}{4a^{2}} \right] 
+\]
+
+$\Delta = b^2-4ac$ et est appelé discriminant du
+trinôme. 
+
+\textbf{\underline{Exemple :}}  
+Réécrivons \( 2x^2 - 8x + 6 \) sous forme canonique :
+
+\textbf{\underline{Forme factorisée d’un trinôme du second degré \( ax^2 + bx + c = 0 \) où \( a \neq 0 \):}}  
+
+Pour factoriser un trinôme du second degré, on utilise son discriminant \( \Delta \) :
+\[
+\Delta = b^2 - 4ac.
+\]
+On distingue trois cas :
+
+\begin{enumerate}
+    \item \textbf{Si \( \Delta > 0 \) :}  
+    Le trinôme admet deux solutions réelles distinctes :
+    \[
+    x_1 = \frac{-b - \sqrt{\Delta}}{2a}, \quad x_2 = \frac{-b + \sqrt{\Delta}}{2a}.
+    \]
+    La forme factorisée est alors :
+    \[
+    ax^2 + bx + c = a(x - x_1)(x - x_2).
+    \]
+
+    \item \textbf{Si \( \Delta = 0 \) :}  
+    Le trinôme admet une solution réelle double :
+    \[
+    x_0 = -\frac{b}{2a}.
+    \]
+    La forme factorisée est :
+    \[
+    ax^2 + bx + c = a(x - x_0)^2.
+    \]
+
+    \item \textbf{Si \( \Delta < 0 \) :}  
+    Le trinôme n’admet pas de solution réelle et ne peut pas être factorisé dans l’ensemble des réels.
+\end{enumerate}
+
+\textbf{\underline{Exemple :}}  
+
+Donner la forme factorisée de  \( 2x^2 - 8x + 6  \) :
+
+\begin{itemize}
+    \item Calculons le discriminant :
+    \[
+    \Delta = b^2 - 4ac = (-8)^2 - 4 \times 2 \times 6 = 64 - 48 = 16.
+    \]
+    \item Comme \( \Delta > 0 \), il y a deux solutions distinctes :
+    \[
+    x_1 = \frac{-b - \sqrt{\Delta}}{2a} = \frac{-(-8) - \sqrt{16}}{2 \times 2} = \frac{8 - 4}{4} = 1,
+    \]
+    \[
+    x_2 = \frac{-b + \sqrt{\Delta}}{2a} = \frac{-(-8) + \sqrt{16}}{2 \times 2} = \frac{8 + 4}{4} = 3.
+    \]
+    \item La forme factorisée du trinôme est donc :
+    \[
+    2x^2 - 8x + 6 = 2(x - 1)(x - 3).
+    \]
+\end{itemize}
+
+
+\end{document}
