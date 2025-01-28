@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{lmodern} % Pour une police plus nette
+\usepackage{stmaryrd}
+\usepackage{graphicx} % Pour l'insertion d'images
+\usepackage{float}    % Pour contrôler précisément le placement
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{color, soul}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18} % Version plus récente de pgfplots
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tkz-tab}
+\usepackage{enumitem}
+%\author{Destiné aux élèves de Terminale S\\Lycée de Dindéfelo\\Présenté par M. BA}
+%\title{\textbf{Rappels et compléments sur les fonctions numériques}}
+%\date{\today}
+\usepackage{tikz}
+\usetikzlibrary{arrows, shapes.geometric, fit}
+% Commande pour la couleur d'accentuation
+\newcommand{\myul}[2][black]{\setulcolor{#1}\ul{#2}\setulcolor{black}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[margin=2.5cm]{geometry} % Ajustement des marges
+\usepackage{eso-pic} % Pour ajouter des éléments en arrière-plan
+
+% Commande pour ajouter du texte en arrière-plan, centré au milieu de chaque page
+\AddToShipoutPicture{
+    \AtPageCenter{%
+        \makebox(0,0)[c]{\rotatebox{60}{\textcolor[gray]{0.9}{\fontsize{2cm}{2cm}\selectfont PGB}}}
+    }
+}
+
+\newcounter{exercice}
+
+% Définir la commande \exemple pour afficher un exemple numéroté
+\newcommand{\exercice}{%
+  \refstepcounter{exercice}% Incrémenter le compteur
+  \textbf{\textcolor{black}{Exercice \theexercice  }} \ignorespaces
+}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+\raggedright
+\textbf{Ministère de l'Éducation Nationale}\\
+Inspection Académique de Kédougou\\
+Lycée Dindéfelo\\
+Cellule de Mathématiques
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\raggedleft
+\textbf{Année scolaire 2024-2025}\\
+Date : 28/01/2025\\
+Classe : 2nd L\\
+Professeur : M. BA
+\end{minipage}
+
+\vspace{0.5cm}
+
+\begin{center}
+\textbf{Calcul dans $\mathbb{R}$}
+\end{center}
+
+\section*{Exercice 1 (Calcul du discriminant)}
+
+Calculer le discriminant \(\Delta\) (délta) de chacun des trinômes suivants :
+
+\[ A(x) = 2x^2 + 8x - 34 \quad\quad B(x) = -x^2 + 11x - 4  \quad\quad C(x) = 3x^2 - 6x - 7 \quad\quad D(x) = -\frac{3}{2}x^2 + 5x + \frac{9}{4} \] 
+
+\[ E(x) = x^2 + 7x + 23 \quad\quad F(x) = -10x^2 + 2x - 3 \quad\quad G(x) = x^2 + x + 3  \quad\quad H(x) = -6x^2 - 7x - 75 \] 
+   
+\[I(x) = x^2 + 2x + 1 \quad\quad J(x) = x^2 + 10x + 25 \quad\quad  K(x) = x^2 - 30x + 225 \quad\quad L(x) = -x^2 - 6x - 9 \]      
+
+
+\end{document}
